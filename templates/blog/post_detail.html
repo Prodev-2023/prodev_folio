@@ -1,0 +1,22 @@
+{% extends "base2.html" %}
+
+
+
+{% block content %}
+<main class="bg-primary">
+    <article class="lg:py-28">
+        <div class=" text-primaryText w-11/12 mx-auto pt-10 pb-10 lg:py-28 lg:container">
+            <div class='mb-16 text-2xl space-y-6'>
+                <p>{{post.title}}</p>
+                <p>{{post.content}}</p>
+                <p>{{post.create_date}}</p>
+            </div>
+            <div class='flex text-center gap-10'>
+                <a class='border-4 w-24 text-primary border-primaryText hover:border-decorColor font-bold p-2 bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor' href="{% url 'blog_update' post.id %}">update</a>
+                <a class='border-4 w-24 text-primary border-primaryText hover:border-decorColor font-bold  p-2 bg-red-400 text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-red-200 hover:text-decorColor' href="{% url 'blog_delete' post.id %}">delete</a>
+                <a class='border-4 text-primary border-primaryText hover:border-decorColor font-bold w-20 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor' href="{% url 'blog_home_page'%}">Back</a>
+            </div>
+        </div>   
+    </article>
+</main>
+{% endblock content %}

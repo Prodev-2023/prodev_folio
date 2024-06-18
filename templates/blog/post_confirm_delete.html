@@ -1,0 +1,28 @@
+{% extends "base2.html" %}
+
+
+
+
+{% block content %}
+<main class="bg-primary">
+    <article class="lg:py-28">
+        <div class=" text-primaryText w-11/12 mx-auto pt-10 pb-10 lg:py-28 lg:container">
+            <div class='w-3/4 space-y-4'>
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class='space-y-8 mb-8 text-2xl'>
+                        <legend>Create Post</legend>
+                    <h2>Are you sure you want to delete ? {{post.title}}</h2>
+                    </fieldset>
+                    <div class='flex gap-10 text-center'>
+                        <div class=' border-4 text-primary border-primaryText hover:border-decorColor font-bold w-36 p-2 bg-green-600 text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor'>
+                            <button type="submit">Cornfirm</button>
+                        </div>
+                        <a class='border-4 text-primary border-primaryText hover:border-decorColor font-bold w-36 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor' href="{% url 'blog_detail_page' post.id %}">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>   
+    </article>
+</main>
+{% endblock content %}

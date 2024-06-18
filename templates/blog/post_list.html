@@ -1,0 +1,38 @@
+{% extends "base2.html" %}
+
+
+
+
+{% block content %}
+<article class="bg-primary grid grid-cols-4 h-screen lg:container mx-auto">
+    <section class="lg:py-28 col-span-3">
+            
+        <div class=" text-primaryText w-full pb-10 pr-4">
+            {% for post in posts %}
+                <div class='pb-10'>
+                    <div class='flex gap-20 pb-6'>
+                        <div>
+                            {% if post.image %}
+                                <img class='w-96 h-40' src="{{ post.image.url }}">
+                            {% endif %}
+                        </div>
+                        <a class='text-center font-semibold underline mb-4' href="{% url 'blog_detail_page' post.id %}">{{post.title|upper}}</a>
+                    </div>
+                    <div>
+                        {{post.content}}
+                    </div>
+                    <div class='text-right'>
+                        <p>{{post.create_date}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section class='text-primaryText text-center border-solid border-x-primaryText'>
+        <div class='lg:py-28 '>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ea quia reprehenderit aspernatur expedita corporis omnis laudantium iste reiciendis libero!</p>
+        </div>
+    </section>
+</article>
+   
+{% endblock content %}

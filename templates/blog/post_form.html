@@ -1,0 +1,30 @@
+{% extends "base2.html" %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+{% block content %}
+<main class="bg-primary">
+    <article class=" mx-auto px-2 py-16 lg:container">
+        <div class="text-primary py-10 px-2 overflow-hidden">
+            <div class='space-y-4'>
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class='space-y-8 mb-8'>
+                        <legend>Create Post</legend>
+                        {{form|crispy}}
+                    </fieldset>
+                    <div class='flex gap-10 text-center'>
+                        <div class='border-4 w-24 text-primary border-primaryText hover:border-decorColor font-bold p-2 bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor'>
+                            <button type="submit">Post</button>
+                        </div>
+                        <a class='border-4 text-primary border-primaryText hover:border-decorColor font-bold w-20 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor' href="{% url 'blog_home_page'%}">Back</a>
+                    </div>
+                </form>
+           </div>
+        </div>   
+    </article>
+</main>
+{% endblock content %}

@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+<main class="">
+    <section id='hero' class="container mx-auto overflow-x-hidden py-10 lg:py-20 justify-around items-center lg:flex">   
+        <div class=" text-secondary px-4 pt-10 pb-5 lg:py-28">
+           <div class=" mb-20">
+            <h1 class=" text-4xl mb-4 font-extrabold text-centert lg:text-5xl ">Hey, Welcome i am</h1>
+            <h2 class="text-3xl mb-4 font-bold">ProDev</h2>
+             <h3 class="text-start text-2xl mb-8 font-bold text-primaryText">A Backend & A Frontend Developer !</h3>
+             <p class="text-start text-2xl mb-8 font-semibold text-primaryText">Let's Build Somthing Together</p>
+           </div>
+            <div class="text-lg w-2/3">
+                <a class="btn border-4 text-primary border-primaryText hover:border-decorColor font-bold w-40 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor" href="#contact"> Hire Me </a>
+            </div>
+        </div>
+        <div class='hidden w-1/3 h-80 animate-pulse lg:block'>
+            <img class='w-full h-full rounded-md' src="{% static "portfolio/images/logo-black.png" %}" alt="">
+       </div> 
+    </section>
+    <section class="py-20 bg-secondary">
+        <div class="px-4 mx-auto lg:w-3/4">
+            <div class=" ">
+                <h1 class="text-3xl text-primaryText font-bold text-center lg:text-start md:text-4xl">About Me</h1>
+            </div>
+            <hr class="w-32  mb-8 border-4 mx-auto border-decorColor text-center lg:text-start lg:mx-0">
+            <div class=" mb-10 ">
+                <p class="text-primaryText text-xl text-justify lg:text-2xl">I'm Joshua, a dedicated developer who values the essence of responsibility in every aspect of life. My transisioning into Tech, was ignited by the captivating Tony Stark in the movie "Iron Man." However, my passion found its home in codes, as a medium where I can materialize my ideas into a logically compelling manner. In addition to my professional pursuits, family remains at the core of my motivation. The support and inspiration I draw from my loved ones propel me to strive for excellence in all that I do. Together, we navigate the dynamic landscape of life, embracing both its challenges and triumphs Beyond my technical Skills, I am an enthusiast for continuous learning and growth. Every challenge becomes an opportunity to expand my skill set and explore new horizons. My dedication to staying ahead of the curve ensures that I bring innovative solutions to the table, making each project a unique and fulfilling experience In essence, I am not just a web developer; I am a storyteller, weaving narratives through lines of code and pixels.
+                    Hire me, and let's build something extraordinary together!</p>
+            </div>
+            <div class="text-lg w-2/3">
+                <a class=" border-4 text-primary border-primaryText hover:border-decorColor font-bold w-40 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor" href="#contact"> Download CV </a>
+            </div>  
+        </div>
+    </section>
+    <section class=" px-4 overflow-x-hidden pt-10">
+        <div class="px-4 mx-auto lg:w-3/4">
+            <div class=" ">
+                <h1 class="text-3xl font-bold text-center text-primaryText lg:text-start md:text-4xl">Skill Set</h1>
+            </div> 
+            <hr class="w-36 border-4  mb-10 mx-auto border-decorColor text-center lg:text-start lg:mx-0">
+            <div class="text-primaryText space-y-10 text-3xl font-bold justify-between items-center py-20 lg:flex lg:space-y-0">
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">Html & Css</li>
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">javascript</li>
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">Tailwind</li>
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">Python</li>
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">Django</li>
+                <li class="list-none hover:text-4xl bg-secondary w-30 rounded-2xl p-4 hover:bg-decorColor duration-[2s]">Mysql</li>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class=" py-28 bg-secondary">
+        <div class="px-4 mx-auto lg:w-3/4">
+            <div class=" ">
+                <h1 class="text-3xl text-primaryText font-bold text-center lg:text-start md:text-4xl">My Portfolio</h1>
+            </div>
+            <hr class="w-44  mb-20 border-4 mx-auto border-decorColor text-center lg:text-start lg:mx-0">
+            <div class="space-y-5 grid-cols-2 grid-rows-3 h-2/4 px-4 gap-10 lg:grid lg:space-y-0 ">
+                <div class="bg-white items-center h-auto">
+                    <div class="w-full h-1/2 p-2 mb-10">
+                        <img class='object-cover' src="{% static "portfolio/images/project1.png" %}" class="w-full h-full object-fill" alt="">
+                    </div>
+                    <div class="text-secondary p-2">
+                        <p class="text-xl mb-5">This is a courier service Business portfolio website, aimed at reaching out to more prospect customer And it is built using Html, javascript and Tailwind Css Only</p>
+                        <a href="https://temiamax-portfolio.vercel.app/index.html"><h3 class="text-secondary text-center btn border-4 border-primaryText hover:border-decorColor w-40 p-2   bg-decorColor font-bold text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">live view</h3></a>
+                    </div>
+                </div> 
+                
+                <div class="bg-white items-center h-auto">
+                    <div class="w-full h-1/2 p-2 mb-10">
+                        <img class='object-cover' src="{% static "portfolio/images/project1.png" %}" class="w-full h-full object-fill" alt="">
+                    </div>
+                    <div class="text-secondary p-2">
+                        <p class="text-xl mb-5">This is a courier service Business portfolio website, aimed at reaching out to more prospect customer And it is built using Html, javascript and Tailwind Css Only</p>
+                        <a href="https://temiamax-portfolio.vercel.app/index.html"><h3 class="text-secondary text-center btn border-4 border-primaryText hover:border-decorColor w-40 p-2   bg-decorColor font-bold text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">live view</h3></a>
+                    </div>
+                </div> 
+              
+                <div class="bg-white items-center h-auto col-span-2 hidden lg:block">
+                    <div class="w-full h-80 p-2 mb-10">
+                        <img class='w-full h-full' src="{% static "portfolio/images/portfolio.png" %}" class="w-full h-full object-fill" alt="">
+                    </div>
+                    <div class="text-secondary p-2">
+                        <p class="text-xl mb-5">This is a courier service Business portfolio website, aimed at reaching out to more prospect customer And it is built using Html, javascript and Tailwind Css Only</p>
+                        <a href="https://temiamax-portfolio.vercel.app/index.html"><h3 class="text-secondary text-center btn border-4 border-primaryText hover:border-decorColor w-40 p-2   bg-decorColor font-bold text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">live view</h3></a>
+                    </div>
+                </div> 
+            
+            
+                <div class="bg-white items-center h-auto hidden lg:block">
+                    <div class="w-full h-1/2 p-2 mb-10">
+                        <img class='object-cover' src="{% static "portfolio/images/project1.png" %}" class="w-full h-full object-fill" alt="">
+                    </div>
+                    <div class="text-secondary p-2">
+                        <p class="text-xl mb-5">This is a courier service Business portfolio website, aimed at reaching out to more prospect customer And it is built using Html, javascript and Tailwind Css Only</p>
+                        <a href="https://temiamax-portfolio.vercel.app/index.html"><h3 class="text-secondary text-center btn border-4 border-primaryText hover:border-decorColor w-40 p-2   bg-decorColor font-bold text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">live view</h3></a>
+                    </div>
+                </div> 
+                
+    
+                <div class="bg-white items-center h-auto hidden lg:block">
+                    <div class="w-full h-1/2 p-2 mb-10">
+                        <img class='object-cover' src="{% static "portfolio/images/project1.png" %}" class="w-full h-full object-fill" alt="">
+                    </div>
+                    <div class="text-secondary p-2">
+                        <p class="text-xl mb-5">This is a courier service Business portfolio website, aimed at reaching out to more prospect customer And it is built using Html, javascript and Tailwind Css Only</p>
+                        <a href="https://temiamax-portfolio.vercel.app/index.html"><h3 class="text-secondary text-center btn border-4 border-primaryText hover:border-decorColor w-40 p-2   bg-decorColor font-bold text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">live view</h3></a>
+                    </div>
+                </div> 
+                                    
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20">
+        <div class="px-4 mx-auto lg:w-3/4">
+            <div class="duration-[3s] -translate-y-full">
+                <h1 class="text-3xl text-primaryText font-bold text-center md:text-4xl lg:text-start">Testimonies</h1>
+            </div>
+            <hr class="w-44 mb-20 border-4 mx-auto border-decorColor text-center lg:text-start lg:mx-0">
+            <div class="space-y-10 justify-between gap-10 lg:flex lg:space-y-0">
+                <div class="bg-white items-center gap-4 p-4 drop-shadow-lg rounded-xl duration-[2s] hover:-translate-x-6 hover:drop-shadow-2xl md:flex lg:h-64">
+                    <div class="w-60 h-auto rounded-full border-4 border-primary">
+                        <img src="{% static "portfolio/images/profile.jpg" %}" class="w-full rounded-full" alt="">
+                    </div>
+                    <div class="text-decorColor">
+                        <h3 class="font-bold text-xl">Mrs Daniella</h3>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut velit saepe quas culpa! Natus perspiciatis modi suscipit laboriosam earum!.</p>
+                    </div>
+                </div>
+                <div class="bg-white items-center gap-4 p-4 drop-shadow-lg rounded-xl duration-[2s] hover:translate-x-6 hover:drop-shadow-2xl md:flex lg:h-64">
+                    <div class="w-60 h-auto rounded-full border-4 border-primary">
+                        <img src="{% static "portfolio/images/profile.jpg" %}" class="w-full rounded-full" alt="">
+                    </div>
+                    <div class="text-decorColor">
+                        <h3 class="font-bold text-xl">Mrs Daniella</h3>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut velit saepe quas culpa! Natus perspiciatis modi suscipit laboriosam earum!.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-secondary">            
+        <div class="px-4 mx-auto lg:w-3/4">
+            <div class="mb-10">
+                <div class="duration-[3s] -translate-y-full">
+                    <h1 class="text-3xl text-primaryText font-bold text-center md:text-4xl lg:text-start">Contact Me Here:</h1>
+                </div>
+                <hr class="w-56 border-4 mx-auto border-decorColor mb-8 text-center lg:text-start lg:mx-0">
+                <div class="w-3/5 h-3/5 hidden lg:block">
+                    <img src="{% static "portfolio/images/map.jpeg" %}" class="w-full h-full" alt="map">
+                </div>
+            </div>
+            <form class="col-span-2" action="https://api.web3forms.com/submit" method="POST" id="form">
+                <input type="hidden" name="access_key" value="7c7182f8-96bc-44da-8d70-fa64218bbb7b" />
+                <input type="hidden" name="subject" value="New Submission from your Website" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                <div class="mb-6">
+                    <label for="name" class="block mb-2 text-xl font-semibold text-primaryText">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Felix White" required class=" pl-4 w-full h-10 p-2 rounded-2xl shadow-2xl text-xl focus:ring-decorColor" required/>
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2 text-xl font-semibold text-primaryText" for="email" required>Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="you@company.com" required class=" pl-4 w-full h-10 p-2 rounded-2xl shadow-2xl text-xl focus:ring-decorColor" required/>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 text-xl font-semibold text-primaryText">Type Text Here</label>
+
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message" class=" pl-4 w-full h-64 p-2 rounded-2xl shadow-2xl text-xl focus:ring-decorColor" required></textarea>
+                </div>
+                <div class="mb-6 duration-[3s] translate-y-full">
+                    <button type="submit" class="btn border-4 text-primary border-primaryText hover:border-decorColor font-bold w-40 p-2   bg-decorColor text-xl rounded-2xl cursor-pointer focus:outline-none hover:bg-primaryText hover:text-decorColor">
+                        Send Message
+                    </button>
+                </div>
+                <p class=" text-2xl text-center text-decorColor mb-10" id="result"></p>
+             </form>
+        </div>
+    </section>
+</main>
+{% endblock content %}
